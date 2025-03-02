@@ -1,0 +1,4 @@
+<?php
+include_once '1-Createur.php';
+$produit = PageProduit('Voile', 'PAV2.webp', 150, "Découvrez notre voile de planche à voile, conçue pour offrir performance et maniabilité sur l'eau. Fabriquée à partir de matériaux de haute qualité, cette voile est à la fois légère et résistante, garantissant une durabilité exceptionnelle même dans des conditions de vent difficiles. Son design aérodynamique permet une prise au vent optimale, vous offrant ainsi une vitesse et une réactivité accrues lors de vos sessions de navigation. Disponible en plusieurs tailles et coloris, cette voile s'adapte à tous les niveaux de compétence, que vous soyez débutant ou expert. Facile à installer et à ajuster, elle vous permettra de profiter pleinement de chaque sortie en mer. Améliorez votre expérience de planche à voile avec notre voile de qualité supérieure, conçue pour vous accompagner dans toutes vos aventures nautiques.");
+?>

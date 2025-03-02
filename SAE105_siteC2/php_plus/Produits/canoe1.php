@@ -1,0 +1,4 @@
+<?php
+include_once '1-Createur.php';
+$produit = PageProduit('Canoë tante', 'canoe1.webp', 250, "Découvrez notre canoë en plastique, conçu pour offrir une expérience de navigation sécuritaire et amusante sur les lacs, les rivières et les océans. Fabriqué à partir de plastique durable et résistant, ce canoë est idéal pour les familles, les couples et les aventuriers solitaires. Avec sa coque stable et son design ergonomique, vous pourrez naviguer en toute confiance et profiter de la beauté de la nature. Le canoë est également équipé de sièges confortables et d'un espace de rangement pour vos affaires personnelles. Que vous soyez débutant ou expérimenté, ce canoë en plastique est l'outil parfait pour explorer les eaux et créer des souvenirs inoubliables. Disponible en plusieurs tailles et couleurs, il est facile à transporter et à stocker, ce qui en fait un choix idéal pour les amateurs de navigation.");
+?>

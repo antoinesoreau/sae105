@@ -1,0 +1,4 @@
+<?php
+include_once '1-Createur.php';
+$produit = PageProduit('Poncho femme', 'ponchoF.webp', 25, "Découvrez notre poncho, conçu pour vous garder au chaud et vous sécher après vos activités aquatiques. Fabriqué en tissu doux et absorbant, ce poncho offre une chaleur agréable tout en permettant une évacuation efficace de l'humidité, idéal après une baignade, une session de surf ou une journée sous la pluie. Sa coupe généreuse et sa capuche confortable vous enveloppent de chaleur, tandis que les manches ouvertes facilitent l'enfilage et le retrait. Léger et facile à transporter, il se plie aisément pour se glisser dans votre sac de sport ou votre voiture. Avec son design élégant et ses couleurs modernes, ce poncho allie confort et style, vous permettant de vous détendre après une journée active. Ne laissez pas le froid ou l'humidité vous ralentir : optez pour notre poncho en polaire et profitez de chaque moment, au sec et au chaud !");
+?>

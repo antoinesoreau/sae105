@@ -1,0 +1,4 @@
+<?php
+include_once '1-Createur.php';
+$produit = PageProduit('Chaussons femme', 'chaussonsF.webp', 15, "Découvrez nos chaussons de voile, conçus pour offrir confort et performance sur l'eau. Fabriqués à partir de matériaux légers et résistants à l'eau, ces chaussons garantissent une excellente adhérence sur les surfaces glissantes, tout en protégeant vos pieds des éléments. Leur design ergonomique assure un ajustement parfait, permettant une grande liberté de mouvement lors de vos sessions de navigation. Que vous soyez débutant ou expert, ces chaussons sont idéaux pour la planche à voile, le kitesurf ou toute autre activité nautique.");
+?>

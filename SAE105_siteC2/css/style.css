@@ -1,0 +1,455 @@
+/** _____________________________________________________________________________Général  **/
+@font-face{
+    font-family: 'ocean-rush';
+    src: url('../typo/ocean-rush/Ocean Rush DEMO.otf') format('truetype');
+}
+body{
+    margin: 0%;
+    font-family: sans-serif;
+    background-color: #61a5ed07;
+    color: navy;
+}
+h1{
+    margin: 0%;
+    font-family: 'ocean-rush';
+    font-weight: 100;
+    font-size: 500%;
+    text-align: center;
+    color: #ffffff ;
+}
+h2{
+    font-family: 'ocean-rush';
+    font-weight: 100;
+    font-size: 200%;
+    padding-left: 10%;
+    color: navy;
+}
+
+
+/** _______________________________________________________________________________Navbar **/
+#navbar{
+    display: flex;
+    border: none;
+    width: 100%;
+    margin: 0%;
+    position: fixed; 
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+
+}
+#navbar .logo{
+    width: 100px;
+}
+/* Menu */
+
+#navbar > .menu{
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0% 20%;
+    margin: 0%;
+}
+#menuAccessoire:checked + label{
+    color: navy;
+}
+#menuVetement:checked +label{
+    color: navy;
+}
+#navbar input[type="radio"]{
+    display: none;
+    
+}
+#navbar .menu li{
+    display: inline;
+    padding: 0px 20px;
+    color: #61A4ED;
+    font-weight: 700;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+#navbar .menu li label{
+    display: inline;
+    padding: 0px 20px;
+    color: #61A4ED;
+    font-weight: 700;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+#navbar li:hover{
+    color: navy;
+}
+#navbar li label:hover{
+    color: navy;
+}
+#navbar a{
+    color: #61A4ED;
+    text-decoration: none;
+}
+#navbar a:hover{
+    color: navy;
+}
+/* Sous menu */
+.sousMenu{
+    list-style: none;
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    top: 20px;
+    left: 0px;
+    
+}
+.menu .lien{
+    position:relative;
+} 
+.lien:hover .sousMenu{
+    display: inline;
+}
+.sousMenu li{
+    margin: 5px;
+}
+.sousMenu > li:hover{
+    color: #61A4ED;
+}
+.sousMenu li > input[type="radio"]{
+    display: inline;
+}
+/* Panier */
+#icone_panier{
+    text-align: right;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    width: 60px;
+    position: relative;
+
+}
+#nmb_articles{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    font-size: 80%;
+    width: 40px;
+    background-color: #61A4ED;
+
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+
+
+    top: 60px;
+
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+}
+
+/** _______________________________________________________________________________Header index **/
+header{
+    background-image: url("../img/BackHead4.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: 100%;
+    padding: 295px 10px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/*__________________________________________________________________________Produits*/
+/*_______________________div id="produits"__________________*/
+
+.produits{
+    display: flex;
+}
+/*_______________________div class="trie"____________________*/
+.trie{
+    width: max-content;
+    background-color: #61A4ED;
+    padding-top: 1%;
+    padding-left: 1%;
+    margin: 0% 1% 1% 0%;
+}
+/*_______________________div class="listeProduit"____________*/
+.listeProduit{
+    display: inline-block;
+    padding: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+
+/*___________________Pour les accessoires*/
+body:has(#navbar>ul>li>#menuVetement:checked + label) .A{
+    display: none;
+}
+body:has(#navbar>ul>li>#menuAccessoire:checked + label) .A{
+    display: block;
+}
+
+
+
+
+.accessoire{
+    width: 20%;
+    display: none;
+    margin-right: 5%;
+    margin-bottom: 2%;
+    text-decoration: none;
+    background-color: #E8F6FE;
+    img{
+        width: 100%;
+    }
+    
+}
+.accessoire > a{
+    color: navy;
+    text-align: center;
+    text-decoration: none;
+}
+
+.A:has(>div>#tous:checked) .accessoire{
+    display: block;
+}
+.A:has(>div>#planche_voile:checked) .planche_voile{
+    display: block;
+}
+.A:has(>div>#SKI:checked) .SKI{
+    display: block;
+}
+.A:has(>div>#SUP:checked) .SUP{
+    display: block;
+}
+.A:has(>div>#canoe:checked) .canoe{
+    display: block;
+}
+
+
+/*___________________Pour les vetements*/
+body:has(#navbar>ul>li>#menuVetement:checked) .V{
+    display: block;
+}
+body:has(#navbar>ul>li>#menuAccessoire:checked) .V{
+    display: none;
+}
+
+
+/* Homme */
+body:has(#navbar>ul>li>ul>li>#homme:checked + label) .homme{
+    display: block;
+}
+body:has(#navbar>ul>li>ul>li>#homme:checked + label) .enfant{
+    display: none;
+}
+body:has(#navbar>ul>li>ul>li>#homme:checked + label) .femme{
+    display: none;
+}
+body:has(#navbar>ul>li>ul>li>#homme:checked + label) .A{
+    display: none;
+}
+/* Femmes */
+body:has(#navbar>ul>li>ul>li>#femme:checked + label) .homme{
+    display: none;
+}
+body:has(#navbar>ul>li>ul>li>#femme:checked + label) .enfant{
+    display: none;
+}
+body:has(#navbar>ul>li>ul>li>#femme:checked + label) .femme{
+    display: block;
+}
+body:has(#navbar>ul>li>ul>li>#femme:checked + label) .A{
+    display: none;
+}
+/* Enfants */
+body:has(#navbar>ul>li>ul>li>#enfant:checked + label) .homme{
+    display: none;
+}
+body:has(#navbar>ul>li>ul>li>#enfant:checked + label) .enfant{
+    display: block;
+}
+body:has(#navbar>ul>li>ul>li>#enfant:checked + label) .femme{
+    display: none;
+}
+body:has(#navbar>ul>li>ul>li>#enfant:checked + label) .A{
+    display: none;
+}
+
+.vetement{
+    width: 20%;
+    margin-right: 5%;
+    margin-bottom: 2%;
+    display: none;
+    background-color: #E8F6FE;
+    img{
+        width: 100%;
+    }
+}
+.vetement>a{
+    color: navy;
+    text-align: center;
+    text-decoration: none;
+}
+.V:has(>div>#tous:checked) .vetement{/*Si produits a un enfant div avec un enfant #tous qui est cocher alors appliquer le style a la classe vetement*/
+    display: block;
+}
+.V:has(>div>#tshirt:checked) .T-shirt{
+    display: block;
+}
+.V:has(>div>#combi:checked) .combi{
+    display: block;
+}
+.V:has(>div>#gants:checked) .gants{
+    display: block;
+}
+.V:has(>div>#chaussons:checked) .chaussons{
+    display: block;
+}
+.V:has(>div>#poncho:checked) .poncho{
+    display: block;
+}
+
+
+
+/* ______________________________________________________Footer */
+footer{
+    background-color: #61A4ED;
+    margin: 0%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+footer p{
+    margin: 0%;
+    margin-left: 20px;
+    color: #ffffff;
+}
+footer img{
+    width: 100px;
+}
+/* ______________________________________________________________Tuto.php */
+iframe{
+    margin: 10px;
+}
+#tuto{
+    text-align: center;
+}
+/* ______________________________________________________________Panier */
+.section{
+    display: flex;
+}
+.gauche{
+    width: 75%;
+}
+.droite{
+    width: 25%;
+    margin: 0% auto;
+    text-align: center;
+    color: navy;
+    font-weight: 700;
+    font-size: 20px;
+    background-color: #E8F6FE;
+}
+#vider{
+    display: none;
+}
+.droite button{
+    margin-bottom: 20px;
+    padding: 5px;
+    border: #61A4ED solid 2px;
+    color: #61A4ED;
+    background-color: #ffffff00;
+    font-weight: 700;
+    font-size: 20px;
+}
+.droite button:hover{
+    background-color: #61A4ED;
+    color: #ffffff;
+}
+.vider{
+    padding: 5px;
+    border: #61A4ED solid 2px;
+    margin-top: 5px;
+    color: #61A4ED;
+
+}
+.vider:hover{
+    background-color: #61A4ED;
+    color: #ffffff;
+}
+.panierProduit{
+    display: flex;
+    width: 80%;
+    margin: 20px auto;
+    background-color: #E8F6FE;
+    align-items: center;
+    position: relative;
+}
+.panierProduit img{
+    width: 100px;
+}
+.panierProduit p{
+    align-items: center;
+}
+.quantite{
+    background-color: #61A4ED;
+    border: #61A4ED solid 2px;
+    position: absolute;
+    right: 20px;
+    padding: 0% 5px;
+    color: #ffffff;
+    font-weight: 700;
+}
+/*__________________________________________________________contact.php */
+#contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#contact input, select, label{
+    border: none;
+    color: navy;
+    font-size: 15px;
+    padding: 5px;
+}
+.border{
+    border: #61A4ED solid 3px;
+    border-radius: 3px;
+    width: fit-content;
+    margin: 5px 0px;
+}
+#contact button{
+    border: #61A4ED solid 3px;
+    background-color: #61A4ED;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 3px;
+    width: fit-content;
+    margin: 5px 0px;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+#contact button:hover{
+    background-color: #ffffff;
+    color: #61A4ED;
+}
+hr{
+    border: #61A4ED solid 2px;
+}
+#recapInfos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* ______________________________________________________________responsive */
+@media screen and (max-width: 720px) {
+    h1{
+        color: red;
+    }
+}

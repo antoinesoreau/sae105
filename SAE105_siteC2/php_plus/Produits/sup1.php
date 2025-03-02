@@ -1,0 +1,4 @@
+<?php
+include_once '1-Createur.php';
+$produit = PageProduit('SUP(Stand-up paddle)', 'sup1.webp', 250, "Découvrez notre paddle haut de gamme, conçu pour offrir une expérience de glisse inégalée sur l'eau. Fabriqué en matériaux légers et résistants, ce paddle allie performance et confort, idéal pour les amateurs de stand-up paddle, que vous soyez débutant ou expert. Sa surface antidérapante garantit une excellente adhérence, tandis que sa forme hydrodynamique permet une navigation fluide et rapide. Avec une capacité de charge optimale, il est parfait pour les balades en solo ou les sorties en famille. Embarquez pour de nouvelles aventures aquatiques avec notre paddle, votre compagnon idéal pour explorer lacs, rivières et océans. Ne manquez pas l'occasion de vivre des moments inoubliables sur l'eau !");
+?>

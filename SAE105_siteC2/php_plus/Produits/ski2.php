@@ -1,0 +1,4 @@
+<?php
+include_once '1-Createur.php';
+$produit = PageProduit('Ski nautique', 'ski2.webp', 250, "Plongez dans l'univers exaltant du ski nautique avec notre équipement de pointe, conçu pour les passionnés de sensations fortes sur l'eau. Fabriqué avec des matériaux de haute qualité, notre ski nautique offre une stabilité exceptionnelle et une maniabilité optimale, que vous soyez débutant ou skieur expérimenté. Son design aérodynamique permet des virages serrés et des performances fluides, tandis que la semelle antidérapante assure une adhérence parfaite pour un contrôle total. Que vous souhaitiez glisser sur des lacs calmes ou défier les vagues, notre ski nautique est l'allié idéal pour des moments de plaisir et d'adrénaline. Préparez-vous à vivre des aventures inoubliables et à repousser vos limites sur l'eau avec notre ski nautique, un incontournable pour tous les amateurs de sports aquatiques !");
+?>

@@ -1,0 +1,4 @@
+<?php
+include_once '1-Createur.php';
+$combiE = PageProduit('Combinaison néoprène enfant', 'combiE.webp', 40, "Une combinaison miniature pour vos enfants ! Découvrez notre combinaison en néoprène, l'équipement idéal pour tous vos sports aquatiques ! Conçue en néoprène de haute qualité, cette combinaison offre une excellente isolation thermique tout en garantissant une grande liberté de mouvement. Sa coupe ergonomique s'adapte parfaitement à votre corps, vous permettant de profiter pleinement de vos sessions de surf, de plongée ou de paddle, même dans des eaux froides. Avec ses coutures renforcées et sa résistance aux abrasions, elle vous protège des éléments extérieurs tout en assurant un confort optimal. Facile à entretenir, il vous suffit de la rincer à l'eau douce après chaque utilisation pour préserver sa durabilité. Ne laissez pas le froid vous arrêter : équipez-vous de notre combinaison en néoprène et plongez dans l'aventure !")
+?> 
